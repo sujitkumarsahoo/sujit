@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujit Kumar Sahoo - Resume</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<!-- WORD -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.5.0/docx.umd.min.js"></script>
+
+<style>
+:root {
+    --primary-blue: #0066CC;
+    --text-dark: #1a1a1a;
+    --text-gray: #4a4a4a;
+    --border-color: #000;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--text-dark);
+    font-size: 12px;
+    line-height: 1.4;
+}
+.resume-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+.header-name {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header-title {
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.contact-info span { margin-right: 15px; font-size: 0.85rem; }
+.contact-info i { color: var(--primary-blue); }
+.circular-badge {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.section-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-bottom: 2px solid var(--border-color);
+    margin-top: 12px;
+}
+.job-title { font-weight: 700; }
+.company-name { color: var(--primary-blue); font-weight: 600; }
+.skill-tag {
+    display: inline-block;
+    padding: 5px 7px;
+    border: 1px solid #ccc;
+    margin: 1px;
+    font-size: 0.75rem;
+}
+.project-item { margin-bottom: 8px; }
+.project-title { font-weight: 700; font-size: 0.85rem; }
+.btn-box {
+    text-align: center;
+    margin: 10px;
+}.circular-badge {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #0066CC;
+}
+
+.circular-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+</head>
+
+<body>
+
+<div class="btn-box">
+    <button class="btn btn-primary" onclick="downloadPDF()">Download PDF</button>
+    <button class="btn btn-success" onclick="downloadWord()">Download Word</button>
+</div>
+
+<div id="resume" class="resume-container">
+
+<div class="row align-items-center mb-2">
+    <div class="col-12">
+    <h1 class="header-name">SUJIT KUMAR SAHOO</h1>
+    <div class="header-title">Full Stack Developer</div>
+
+    <div class="contact-info">
+        <span><i class="fas fa-phone"></i> 7750867709 / 8480855767</span>
+
+        <span>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sujitkumarsahoo49@gmail.com">
+                sujitkumarsahoo49@gmail.com
+            </a>
+        </span>
+
+        <!-- ✅ PORTFOLIO CLICKABLE -->
+        <span>
+            <i class="fas fa-globe"></i>
+            <a href="https://sujitkumarsahoo.github.io/my-portfolio/" target="_blank">
+                sujitkumarsahoo.github.io/my-portfolio
+            </a>
+        </span>
+
+        <!-- ✅ LINKEDIN CLICKABLE -->
+        <span>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/sujit-kumar-sahoo-5a6a3b183/" target="_blank">
+                linkedin.com/in/sujit-kumar-sahoo
+            </a>
+        </span>
+    </div>
+</div>
+    <!-- <div class="col-2 text-end"> -->
+        <!-- <div class="circular-badge"> -->
+			<!-- <img src="Sujit_Kumar_Sahoo_Photo.PNG" alt="Sujit Photo"> -->
+		<!-- </div> -->
+    <!-- </div> -->
+	<!-- <div class="circular-badge">SK</div> -->
+</div>
+
+<div class="row">
+
+<div class="col-md-7">
+
+<div class="section-title">SUMMARY</div>
+<p>
+Full Stack Developer with 6+ years of experience building scalable web applications using Python, React.js, and MERN stack (MongoDB, Express.js, React, Node.js). Skilled in developing REST APIs, backend services, and responsive user interfaces with a focus on performance and clean architecture. Experienced with FastAPI, Flask, Django, and databases like PostgreSQL, MySQL, and MongoDB. Strong in API integration, debugging, and end-to-end application development.
+</p>
+
+<div class="section-title">EXPERIENCE</div>
+
+<div>
+<div class="d-flex justify-content-between">
+<span class="job-title">Senior Full Stack Developer</span>
+<span>08/2022 - Present</span>
+</div>
+<div class="company-name">Tata Technologies, Pune</div>
+<ul>
+<li>Developed high-performance React.js applications, improving load speed by 40%</li>
+<li>Implemented Redux Toolkit, reducing complexity and improving maintainability by 25%</li>
+<li>Built responsive dashboards using Material UI for data visualization</li>
+<li>Developed secure RBAC and workflow-based enterprise applications</li>
+<li>Built and integrated REST APIs for frontend-backend communication</li>
+<li>Developed backend services using Python (FastAPI/Flask)</li>
+<li>Implemented chatbot-based query system for user interaction</li>
+<li>Optimized database design and queries for better performance</li>
+</ul>
+</div>
+
+<div>
+<div class="d-flex justify-content-between">
+<span class="job-title">Software Engineer</span>
+<span>01/2020 - 08/2022</span>
+</div>
+<div class="company-name">Silicon Tech Lab, Bhubaneswar</div>
+<ul>
+<li>Developed full stack applications for admission, recruitment, and grievance systems</li>
+<li>Designed and built REST APIs for frontend-backend integration</li>
+<li>Built responsive UI using HTML, CSS, and JavaScript</li>
+<li>Integrated SMS APIs, improving communication and onboarding by 25%</li>
+<li>Developed dynamic PDF reporting modules for institutions</li>
+</ul>
+</div>
+
+<!-- INTERNSHIPS (SUMMARY STYLE - ATS FRIENDLY) -->
+
+<div class="section-title">INTERNSHIPS</div>
+
+<div>
+    <div class="d-flex justify-content-between">
+        <span class="job-title">IoT & Embedded Systems Intern</span>
+        <span>01/2020 - 04/2020</span>
+    </div>
+    <div class="company-name">Robogenesis, Bhubaneswar</div>
+    <p>
+        Worked on IoT-based projects using Embedded C, Arduino, and Raspberry Pi, developing smart automation and robotics solutions. Gained hands-on experience in IoT architecture, real-time device communication, and hardware-software integration.
+    </p>
+</div>
+
+<div>
+    <div class="d-flex justify-content-between">
+        <span class="job-title">Web Developer Intern</span>
+        <span>04/2019 - 06/2019</span>
+    </div>
+    <div class="company-name">Manhattan Tech Ventures, Kolkata</div>
+    <p>
+        Developed backend features for a doctor appointment system using PHP and designed responsive user interfaces using HTML and CSS. Worked on full stack development including system integration, deployment, and performance optimization.
+    </p>
+</div>
+<div class="section-title">KEY ACHIEVEMENTS</div>
+<ul>
+<li><strong>Patent Holder – AI + IoT</strong>:Patent holder for AI + IoT wildlife solution using YOLO)</li>
+<li><strong>Champion of the Month – Tata Technologies</strong>:Recognized for outstanding performance (Mar 2026))</li>
+<li><strong>Automation System – Tata Motors</strong>:Recognized for outstanding performance (Mar 2026))</li>
+<li><strong>Quality Analytics Project</strong>:Recognized for key contribution (Mar 2025))</li>
+<li><strong>IIT Bombay Finalist</strong>:Finalist at IIT Bombay for IoT-based solution)</li>
+</ul>
+
+</div>
+
+<div class="col-md-5">
+
+<div class="section-title">SKILLS</div>
+<div>
+<span class="skill-tag">React.js</span>
+<span class="skill-tag">JavaScript</span>
+<span class="skill-tag">Python</span>
+<span class="skill-tag">Redux Toolkit</span>
+<span class="skill-tag">Node.js</span>
+<span class="skill-tag">Express.js</span>
+<span class="skill-tag">MERN Stack</span>
+<span class="skill-tag">REST APIs</span>
+<span class="skill-tag">FastAPI</span>
+<span class="skill-tag">Django</span>
+<span class="skill-tag">PostgreSQL</span>
+<span class="skill-tag">MySQL</span>
+<span class="skill-tag">MongoDB</span>
+<span class="skill-tag">Flask</span>
+<span class="skill-tag">HTML/CSS</span>
+</div>
+
+
+
+<div class="section-title">PROJECTS</div>
+
+<div class="project-item">
+<div class="project-title">Quality Analytics Project Management (QAPM)</div>
+<ul>
+<li>Developed centralized web platform using React.js, Python (FastAPI), and MySQL for DFMEA, CGSR, and reliability tracking</li>
+<li>Implemented project tracking, automated workflows, dashboards, and role-based access (RBAC)</li>
+<li>Built scalable, mobile-friendly system with reporting and AI chatbot for user support</li>
+</ul>
+</div>
+
+<div class="project-item">
+<div class="project-title">ERC WCQ Tracking System (Level 4)</div>
+<ul>
+<li>Developed quality tracking system using React.js, Python (FastAPI), and MySQL with real-time dashboards and KPI monitoring</li>
+<li>Implemented data validation, automated workflows, reporting, and role-based access (RBAC)</li>
+<li>Improved audit tracking, operational efficiency, and enabled mobile-friendly access for users</li>
+</ul>
+</div>
+
+<div class="project-item">
+<div class="project-title">APS Admission System</div>
+<ul>
+<li>Developed Army Public School admission portal using HTML, CSS, JavaScript, jQuery, MySQL, and CodeIgniter</li>
+<li>Implemented end-to-end admission workflow including form submission, data management, and application tracking</li>
+<li>Integrated secure payment gateway for online fee submission and transaction handling</li>
+</ul>
+</div>
+
+<div class="project-item">
+<div class="project-title">DSEU Recruitment System (Delhi)</div>
+<ul>
+<li>Developed recruitment portal using React.js, HTML, CSS, JavaScript, jQuery, MySQL, and CodeIgniter</li>
+<li>Implemented application management, candidate registration, and workflow processing</li>
+<li>Ensured timely delivery with focus on performance and usability</li>
+</ul>
+</div>
+<div class="section-title">EDUCATION</div>
+<div class="d-flex justify-content-between">
+<span class="job-title">B.Tech in Computer Science</span>
+<span>2016 - 2020</span>
+</div>
+<div class="company-name">Centurion University</div>
+
+</div>
+
+</div>
+</div>
+
+<script>
+function downloadPDF() {
+    html2pdf().from(document.getElementById("resume")).save("Sujit_Resume.pdf");
+}
+
+async function downloadWord() {
+    const { Document, Packer, Paragraph } = window.docx;
+
+    const text = document.getElementById("resume").innerText.split("\n");
+    const paragraphs = text.map(t => new Paragraph(t));
+
+    const doc = new Document({
+        sections: [{ children: paragraphs }]
+    });
+
+    const blob = await Packer.toBlob(doc);
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "Sujit_Resume.docx";
+    link.click();
+}
+</script>
+
+</body>
+</html>
